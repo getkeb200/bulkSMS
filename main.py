@@ -28,9 +28,7 @@ def init_db():
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             );
         """)
-        cur.execute("""
-            INSERT INTO users (token, is_paid) VALUES ('abc123', TRUE);                
-        """)
+        
 
 init_db()
 
